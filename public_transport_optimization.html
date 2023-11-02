@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Passenger Count</title>
+</head>
+<body>
+    <h1>Random Passenger Count</h1>
+    <p>Passenger Count: <span id="passengerCount">0</span></p>
+    <button onclick="generateRandomCount()">Generate Random Count</button>
+
+    <script>
+        function generateRandomCount() {
+            // Generate a random passenger count between 0 and 100
+            var randomCount = Math.floor(Math.random() * 101);
+
+            // Display the random count on the web page
+            document.getElementById("passengerCount").textContent = randomCount;
+        }
+    </script>
+</body>
+</html>
